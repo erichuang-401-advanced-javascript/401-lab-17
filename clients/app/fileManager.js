@@ -5,6 +5,14 @@ const events = require('../../events');
 
 module.exports = {};
 
+module.exports.initFile = () => {
+  let file = null;
+  if ( process.argv.slice(2).shift() ) {
+    file = process.argv.slice(2).shift();
+    events.emit( 'file-created', file );
+  } else events.emit( 'error', 'Error creating file' );
+};
+
 module.exports.readFile = ( file ) => {
   return fse.readFile(file)
     .then( fileData => {
