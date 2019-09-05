@@ -2,7 +2,6 @@
 
 const events = require('../../events');
 const fileManager = require('./fileManager');
-const initFile = require('./initFile');
 const socket = require('socket.io-client');
 const API_URL = 'http://localhost:3000';
 const generalConnection = socket.connect( API_URL );
@@ -21,4 +20,4 @@ generalConnection.on( 'message', message => console.log( 'Server message:', mess
 generalConnection.on( 'file-saved', message => console.log( 'Server confirmed:', message ) );
 generalConnection.on( 'error', message => console.log( 'Server confirmed:', message ) );
 
-initFile();
+fileManager.initFile();
