@@ -1,0 +1,27 @@
+{
+  "name": "401-lab-17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erichuang-401-advanced-javascript/401-lab-17.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erichuang-401-advanced-javascript/401-lab-17/issues"
+  },
+  "homepage": "https://github.com/erichuang-401-advanced-javascript/401-lab-17#readme",
+  "dependencies": {
+    "eslint": "^6.3.0",
+    "fs-extra": "^8.1.0",
+    "jest": "^24.9.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  }
+}
